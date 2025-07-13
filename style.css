@@ -1,0 +1,9 @@
+*{box-sizing:border-box;}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f0f2f5;display:flex;justify-content:center;height:100vh;align-items:center;}
+.editor-container{width:90%;max-width:900px;background:#fff;border:1px solid #ccc;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+.toolbar{display:flex;flex-wrap:wrap;padding:8px;border-bottom:1px solid #ccc;gap:4px;background:#f7f7f7;}
+.toolbar select,.toolbar input[type="color"],.toolbar .tool-btn{padding:4px 6px;border:1px solid #ccc;border-radius:4px;background:#fff;cursor:pointer;font-size:14px;}
+.tool-btn{min-width:32px;text-align:center;}
+.tool-btn:active{background:#e0e0e0;}
+#editor{min-height:400px;padding:12px;font-size:16px;outline:none;}
+#editor.empty:before{content:attr(data-placeholder);color:#999;}

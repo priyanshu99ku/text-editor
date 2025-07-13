@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <select id="fontName" title="Font Family"></select>
+            <select id="fontSize" title="Font Size"></select>
+
+            <button class="tool-btn" id="bold" title="Bold"><b>B</b></button>
+            <button class="tool-btn" id="italic" title="Italic"><i>I</i></button>
+            <button class="tool-btn" id="underline" title="Underline"><u>U</u></button>
+
+            <input type="color" id="foreColor" title="Text Color" />
+            <input type="color" id="backColor" title="Highlight" />
+
+            <button class="tool-btn" id="leftAlign" title="Align Left">&#8676;</button>
+            <button class="tool-btn" id="centerAlign" title="Align Center">&#8596;</button>
+            <button class="tool-btn" id="rightAlign" title="Align Right">&#8677;</button>
+
+            <button class="tool-btn" id="undo" title="Undo">&#8630;</button>
+            <button class="tool-btn" id="redo" title="Redo">&#8631;</button>
+        </div>
+        <div id="editor" contenteditable="true"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
